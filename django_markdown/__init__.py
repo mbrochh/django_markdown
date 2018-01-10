@@ -1,6 +1,6 @@
 """ Django-Markdown supports markdown in Django. """
 
-__version__ = "0.8.4"
-__project__ = "django-markdown"
-__author__ = "Kirill Klenov <horneds@gmail.com>"
+__version__ = "0.8.6"
+__project__ = "django2-markdown"
+__author__ = "Tomas Garzon <tomasgarzonhervas@gmail.com>"
 __license__ = "GNU LGPL"
