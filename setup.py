@@ -37,15 +37,14 @@ setup(
     long_description=_read('README.rst'),
     license=_license,
 
-    author="Kirill Klenov",
-    author_email="horneds@gmail.com",
-    url="https://github.com/klen/django_markdown",
+    author="Tomas Garzon",
+    author_email="tomasgarzonhervas@gmail.com",
+    url="https://github.com/tomasgarzon/django_markdown",
 
     keywords='html markdown django',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
-        'Natural Language :: Russian',
         'Natural Language :: English',
         'License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)', # noqa
         'Programming Language :: Python',
