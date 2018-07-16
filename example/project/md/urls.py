@@ -1,6 +1,5 @@
-from django.urls import patterns, include, re_path
+from django.urls import re_path
 
-urlpatterns = patterns(
-    '',
+urlpatterns = [
     re_path(r'^$', 'project.md.views.home'),
-)
+]
