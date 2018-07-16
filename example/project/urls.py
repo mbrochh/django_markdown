@@ -1,4 +1,4 @@
-from django.conf.urls import patterns, include, url
+from django.urls import patterns, include, re_path
 
 from django.contrib import admin
 admin.autodiscover()
@@ -6,9 +6,10 @@ admin.autodiscover()
 from django_markdown import flatpages
 flatpages.register()
 
-urlpatterns = patterns('',
-    url(r'^markdown/', include('django_markdown.urls')),
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^pages/', include('django.contrib.flatpages.urls')),
-    url(r'', include('project.md.urls')),
+urlpatterns = patterns(
+    '',
+    re_path(r'^markdown/', include('django_markdown.urls')),
+    re_path(r'^admin/', include(admin.site.urls)),
+    re_path(r'^pages/', include('django.contrib.flatpages.urls')),
+    re_path(r'', include('project.md.urls')),
 )

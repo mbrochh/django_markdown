@@ -1,8 +1,8 @@
 """ Define preview URL. """
 
-from django.conf.urls import patterns, url
+from django.urls import patterns, re_path
 
 from .views import preview
 
 urlpatterns = patterns(
-    '', url('preview/$', preview, name='django_markdown_preview'))
+    '', re_path('preview/$', preview, name='django_markdown_preview'))
